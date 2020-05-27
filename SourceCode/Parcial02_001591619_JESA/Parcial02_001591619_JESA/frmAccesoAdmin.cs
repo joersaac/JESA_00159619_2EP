@@ -14,12 +14,14 @@ namespace Parcial02_001591619_JESA
     {
         private UserControl currentU = new UserControl();
         private UserControl currentN = new UserControl();
+        private UserControl currentP = new UserControl();
   
         public frmAccesoAdmin()
         {
             InitializeComponent();
             currentU = uscCrearUsuario1;
             currentN = uscAnadirNegocio1;
+            currentP = uscAnadirProducto1;
         }
 
         private void frmAccesoAdmin_Load(object sender, EventArgs e)
@@ -81,6 +83,24 @@ namespace Parcial02_001591619_JESA
             tlpMantenimientoN.Controls.Add(currentN, 0, 0);
             tlpMantenimientoN.SetColumnSpan(currentN, 2);
             currentN.Dock = System.Windows.Forms.DockStyle.Fill;
+        }
+
+        private void btnAnadir_Click(object sender, EventArgs e)
+        {
+            tlpMantenimientoP.Controls.Remove(currentP);
+            currentP = new uscAnadirProducto();
+            tlpMantenimientoP.Controls.Add(currentP, 0, 0);
+            tlpMantenimientoP.SetColumnSpan(currentP, 2);
+            currentP.Dock = System.Windows.Forms.DockStyle.Fill;
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            tlpMantenimientoP.Controls.Remove(currentP);
+            currentP = new uscEliminarProducto();
+            tlpMantenimientoP.Controls.Add(currentP, 0, 0);
+            tlpMantenimientoP.SetColumnSpan(currentP, 2);
+            currentP.Dock = System.Windows.Forms.DockStyle.Fill;
         }
     }
 }

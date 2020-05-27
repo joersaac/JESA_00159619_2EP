@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.tlpELiminarN = new System.Windows.Forms.TableLayoutPanel();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.lblBusiName = new System.Windows.Forms.Label();
             this.cmbNegocios = new System.Windows.Forms.ComboBox();
-            this.btnEliminar = new System.Windows.Forms.Button();
             this.tlpELiminarN.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,6 +52,22 @@
             this.tlpELiminarN.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tlpELiminarN.Size = new System.Drawing.Size(412, 326);
             this.tlpELiminarN.TabIndex = 0;
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnEliminar.BackColor = System.Drawing.Color.SlateBlue;
+            this.tlpELiminarN.SetColumnSpan(this.btnEliminar, 2);
+            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.ForeColor = System.Drawing.Color.White;
+            this.btnEliminar.Location = new System.Drawing.Point(129, 226);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(153, 37);
+            this.btnEliminar.TabIndex = 15;
+            this.btnEliminar.Text = "Eliminar Negocio";
+            this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // lblBusiName
             // 
@@ -75,22 +91,6 @@
             this.cmbNegocios.Name = "cmbNegocios";
             this.cmbNegocios.Size = new System.Drawing.Size(164, 21);
             this.cmbNegocios.TabIndex = 5;
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnEliminar.BackColor = System.Drawing.Color.SlateBlue;
-            this.tlpELiminarN.SetColumnSpan(this.btnEliminar, 2);
-            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.ForeColor = System.Drawing.Color.White;
-            this.btnEliminar.Location = new System.Drawing.Point(129, 226);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(153, 37);
-            this.btnEliminar.TabIndex = 15;
-            this.btnEliminar.Text = "Eliminar Negocio";
-            this.btnEliminar.UseVisualStyleBackColor = false;
-            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // uscEliminarNegocio
             // 

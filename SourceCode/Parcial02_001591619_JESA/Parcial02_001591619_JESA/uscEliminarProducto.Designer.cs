@@ -68,12 +68,12 @@
             this.lblItemName.AutoSize = true;
             this.lblItemName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblItemName.ForeColor = System.Drawing.Color.White;
-            this.lblItemName.Location = new System.Drawing.Point(21, 68);
+            this.lblItemName.Location = new System.Drawing.Point(18, 68);
             this.lblItemName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblItemName.Name = "lblItemName";
-            this.lblItemName.Size = new System.Drawing.Size(131, 20);
+            this.lblItemName.Size = new System.Drawing.Size(137, 20);
             this.lblItemName.TabIndex = 7;
-            this.lblItemName.Text = "Nombre Negocio:";
+            this.lblItemName.Text = "Nombre Producto:";
             this.lblItemName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnEliminar
@@ -90,6 +90,7 @@
             this.btnEliminar.TabIndex = 16;
             this.btnEliminar.Text = "Eliminar Producto";
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // uscEliminarProducto
             // 
