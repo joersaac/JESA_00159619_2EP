@@ -38,14 +38,17 @@
             this.dgvUsuario = new System.Windows.Forms.DataGridView();
             this.btnCrearU = new System.Windows.Forms.Button();
             this.btnEliminarU = new System.Windows.Forms.Button();
-            this.uscCrearUsuario1 = new Parcial02_001591619_JESA.uscCrearUsuario();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tlpMantenimientoN = new System.Windows.Forms.TableLayoutPanel();
             this.btnAnadirN = new System.Windows.Forms.Button();
-            this.uscAnadirNegocio1 = new Parcial02_001591619_JESA.uscAnadirNegocio();
             this.btnEliminarN = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.uscCrearUsuario1 = new Parcial02_001591619_JESA.uscCrearUsuario();
+            this.uscAnadirNegocio1 = new Parcial02_001591619_JESA.uscAnadirNegocio();
+            this.tlpMantenimientoP = new System.Windows.Forms.TableLayoutPanel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.tabAdmin.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
@@ -54,6 +57,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuario)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.tlpMantenimientoN.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            this.tlpMantenimientoP.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabAdmin
@@ -188,17 +193,6 @@
             this.btnEliminarU.UseVisualStyleBackColor = false;
             this.btnEliminarU.Click += new System.EventHandler(this.btnEliminarU_Click);
             // 
-            // uscCrearUsuario1
-            // 
-            this.uscCrearUsuario1.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.tlpMantenimientoU.SetColumnSpan(this.uscCrearUsuario1, 2);
-            this.uscCrearUsuario1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uscCrearUsuario1.Location = new System.Drawing.Point(377, 1);
-            this.uscCrearUsuario1.Margin = new System.Windows.Forms.Padding(1);
-            this.uscCrearUsuario1.Name = "uscCrearUsuario1";
-            this.uscCrearUsuario1.Size = new System.Drawing.Size(375, 284);
-            this.uscCrearUsuario1.TabIndex = 8;
-            // 
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.DarkSlateBlue;
@@ -243,17 +237,6 @@
             this.btnAnadirN.UseVisualStyleBackColor = false;
             this.btnAnadirN.Click += new System.EventHandler(this.btnAnadirN_Click);
             // 
-            // uscAnadirNegocio1
-            // 
-            this.uscAnadirNegocio1.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.tlpMantenimientoN.SetColumnSpan(this.uscAnadirNegocio1, 2);
-            this.uscAnadirNegocio1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uscAnadirNegocio1.Location = new System.Drawing.Point(2, 2);
-            this.uscAnadirNegocio1.Margin = new System.Windows.Forms.Padding(2);
-            this.uscAnadirNegocio1.Name = "uscAnadirNegocio1";
-            this.uscAnadirNegocio1.Size = new System.Drawing.Size(753, 285);
-            this.uscAnadirNegocio1.TabIndex = 9;
-            // 
             // btnEliminarN
             // 
             this.btnEliminarN.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -272,6 +255,7 @@
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.tabPage4.Controls.Add(this.tlpMantenimientoP);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage4.Name = "tabPage4";
@@ -288,6 +272,73 @@
             this.tabPage5.Size = new System.Drawing.Size(757, 322);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Historial ordenes";
+            // 
+            // uscCrearUsuario1
+            // 
+            this.uscCrearUsuario1.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.tlpMantenimientoU.SetColumnSpan(this.uscCrearUsuario1, 2);
+            this.uscCrearUsuario1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uscCrearUsuario1.Location = new System.Drawing.Point(377, 1);
+            this.uscCrearUsuario1.Margin = new System.Windows.Forms.Padding(1);
+            this.uscCrearUsuario1.Name = "uscCrearUsuario1";
+            this.uscCrearUsuario1.Size = new System.Drawing.Size(375, 284);
+            this.uscCrearUsuario1.TabIndex = 8;
+            // 
+            // uscAnadirNegocio1
+            // 
+            this.uscAnadirNegocio1.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.tlpMantenimientoN.SetColumnSpan(this.uscAnadirNegocio1, 2);
+            this.uscAnadirNegocio1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uscAnadirNegocio1.Location = new System.Drawing.Point(2, 2);
+            this.uscAnadirNegocio1.Margin = new System.Windows.Forms.Padding(2);
+            this.uscAnadirNegocio1.Name = "uscAnadirNegocio1";
+            this.uscAnadirNegocio1.Size = new System.Drawing.Size(753, 285);
+            this.uscAnadirNegocio1.TabIndex = 9;
+            // 
+            // tlpMantenimientoP
+            // 
+            this.tlpMantenimientoP.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.tlpMantenimientoP.ColumnCount = 2;
+            this.tlpMantenimientoP.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpMantenimientoP.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpMantenimientoP.Controls.Add(this.button2, 0, 1);
+            this.tlpMantenimientoP.Controls.Add(this.button1, 0, 1);
+            this.tlpMantenimientoP.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tlpMantenimientoP.Location = new System.Drawing.Point(0, 0);
+            this.tlpMantenimientoP.Name = "tlpMantenimientoP";
+            this.tlpMantenimientoP.RowCount = 2;
+            this.tlpMantenimientoP.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
+            this.tlpMantenimientoP.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tlpMantenimientoP.Size = new System.Drawing.Size(757, 322);
+            this.tlpMantenimientoP.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button1.BackColor = System.Drawing.Color.SlateBlue;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(116, 291);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(146, 29);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Añadir";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button2.BackColor = System.Drawing.Color.SlateBlue;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(510, 291);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(115, 29);
+            this.button2.TabIndex = 12;
+            this.button2.Text = "Eliminar";
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // frmAccesoAdmin
             // 
@@ -307,6 +358,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuario)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tlpMantenimientoN.ResumeLayout(false);
+            this.tabPage4.ResumeLayout(false);
+            this.tlpMantenimientoP.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -330,5 +383,8 @@
         private System.Windows.Forms.Button btnEliminarN;
         private uscAnadirNegocio uscAnadirNegocio1;
         private System.Windows.Forms.Button btnAnadirN;
+        private System.Windows.Forms.TableLayoutPanel tlpMantenimientoP;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }

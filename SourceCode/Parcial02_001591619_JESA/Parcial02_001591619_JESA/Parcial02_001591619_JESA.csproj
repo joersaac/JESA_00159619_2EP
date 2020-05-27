@@ -110,6 +110,12 @@
     <Compile Include="uscAnadirNegocio.Designer.cs">
       <DependentUpon>uscAnadirNegocio.cs</DependentUpon>
     </Compile>
+    <Compile Include="uscAnadirProducto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uscAnadirProducto.Designer.cs">
+      <DependentUpon>uscAnadirProducto.cs</DependentUpon>
+    </Compile>
     <Compile Include="uscCrearUsuario.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -148,6 +154,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="uscAnadirNegocio.resx">
       <DependentUpon>uscAnadirNegocio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uscAnadirProducto.resx">
+      <DependentUpon>uscAnadirProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="uscCrearUsuario.resx">
       <DependentUpon>uscCrearUsuario.cs</DependentUpon>
