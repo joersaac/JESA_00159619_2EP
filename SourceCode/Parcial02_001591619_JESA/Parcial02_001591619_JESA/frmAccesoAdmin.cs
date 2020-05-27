@@ -12,12 +12,14 @@ namespace Parcial02_001591619_JESA
 {
     public partial class frmAccesoAdmin : Form
     {
-        private UserControl current = new UserControl();
-        private uscEliminarUsuario eu = new uscEliminarUsuario();
+        private UserControl currentU = new UserControl();
+        private UserControl currentN = new UserControl();
+  
         public frmAccesoAdmin()
         {
             InitializeComponent();
-            current = uscCrearUsuario1;
+            currentU = uscCrearUsuario1;
+            currentN = uscAnadirNegocio1;
         }
 
         private void frmAccesoAdmin_Load(object sender, EventArgs e)
@@ -40,25 +42,45 @@ namespace Parcial02_001591619_JESA
 
         private void btnEliminarU_Click(object sender, EventArgs e)
         {
-            tloMantenimientoU.Controls.Remove(current);
-            current = eu;
-            tloMantenimientoU.Controls.Add(current, 1, 0);
-            tloMantenimientoU.SetColumnSpan(current, 2);
-            current.Dock = System.Windows.Forms.DockStyle.Fill;
+            uscEliminarUsuario eu = new uscEliminarUsuario();
+            tlpMantenimientoU.Controls.Remove(currentU);
+            currentU = eu;
+            tlpMantenimientoU.Controls.Add(currentU, 1, 0);
+            tlpMantenimientoU.SetColumnSpan(currentU, 2);
+            currentU.Dock = System.Windows.Forms.DockStyle.Fill;
         }
 
         private void btnCrearU_Click(object sender, EventArgs e)
         {
-            tloMantenimientoU.Controls.Remove(current);
-            current = uscCrearUsuario1;
-            tloMantenimientoU.Controls.Add(current, 1, 0);
-            tloMantenimientoU.SetColumnSpan(current, 2);
-            current.Dock = System.Windows.Forms.DockStyle.Fill;
+            tlpMantenimientoU.Controls.Remove(currentU);
+            currentU = uscCrearUsuario1;
+            tlpMantenimientoU.Controls.Add(currentU, 1, 0);
+            tlpMantenimientoU.SetColumnSpan(currentU, 2);
+            currentU.Dock = System.Windows.Forms.DockStyle.Fill;
         }
 
         private void btnRefrescar_Click(object sender, EventArgs e)
         {
             LoadUserList();
+        }
+
+        private void btnAnadirN_Click(object sender, EventArgs e)
+        {
+            tlpMantenimientoN.Controls.Remove(currentN);
+            currentN = uscAnadirNegocio1;
+            tlpMantenimientoN.Controls.Add(currentN, 0, 0);
+            tlpMantenimientoN.SetColumnSpan(currentN, 2);
+            currentN.Dock = System.Windows.Forms.DockStyle.Fill;
+        }
+
+        private void btnEliminarN_Click(object sender, EventArgs e)
+        {
+            uscEliminarNegocio en = new uscEliminarNegocio();
+            tlpMantenimientoN.Controls.Remove(currentN);
+            currentN = en;
+            tlpMantenimientoN.Controls.Add(currentN, 0, 0);
+            tlpMantenimientoN.SetColumnSpan(currentN, 2);
+            currentN.Dock = System.Windows.Forms.DockStyle.Fill;
         }
     }
 }

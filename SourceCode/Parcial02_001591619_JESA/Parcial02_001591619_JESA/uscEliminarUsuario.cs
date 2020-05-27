@@ -11,7 +11,7 @@ using System.Windows.Forms;
 namespace Parcial02_001591619_JESA
 {
     public partial class uscEliminarUsuario : UserControl
-    {
+    {        
         public uscEliminarUsuario()
         {
             InitializeComponent();
@@ -42,11 +42,13 @@ namespace Parcial02_001591619_JESA
                 ConnectionDB.ExecuteNonQuery("DELETE FROM appuser " +
                                              $"WHERE username='{cmbUsuario.SelectedItem.ToString()}'");
                 MessageBox.Show("Se eleimino el usuario!");
+                Load_list();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Ha ocurrido un ERROR!");
             }
         }
+
     }
 }

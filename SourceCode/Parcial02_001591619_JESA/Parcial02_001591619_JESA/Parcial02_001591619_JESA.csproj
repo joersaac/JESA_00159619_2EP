@@ -104,11 +104,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="uscAnadirNegocio.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uscAnadirNegocio.Designer.cs">
+      <DependentUpon>uscAnadirNegocio.cs</DependentUpon>
+    </Compile>
     <Compile Include="uscCrearUsuario.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="uscCrearUsuario.Designer.cs">
       <DependentUpon>uscCrearUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uscEliminarNegocio.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uscEliminarNegocio.Designer.cs">
+      <DependentUpon>uscEliminarNegocio.cs</DependentUpon>
     </Compile>
     <Compile Include="uscEliminarUsuario.cs">
       <SubType>UserControl</SubType>
@@ -134,8 +146,14 @@
     <EmbeddedResource Include="frmRegistro.resx">
       <DependentUpon>frmRegistro.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="uscAnadirNegocio.resx">
+      <DependentUpon>uscAnadirNegocio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="uscCrearUsuario.resx">
       <DependentUpon>uscCrearUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uscEliminarNegocio.resx">
+      <DependentUpon>uscEliminarNegocio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="uscEliminarUsuario.resx">
       <DependentUpon>uscEliminarUsuario.cs</DependentUpon>
