@@ -82,11 +82,12 @@
             this.btnEliminarU.TabIndex = 10;
             this.btnEliminarU.Text = "Eliminar";
             this.btnEliminarU.UseVisualStyleBackColor = false;
+            this.btnEliminarU.Click += new System.EventHandler(this.btnEliminarU_Click);
             // 
             // cmbUsuario
             // 
-            this.cmbUsuario.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbUsuario.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cmbUsuario.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbUsuario.FormattingEnabled = true;
             this.cmbUsuario.Location = new System.Drawing.Point(318, 128);
             this.cmbUsuario.Name = "cmbUsuario";

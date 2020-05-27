@@ -40,8 +40,8 @@
             this.dgvUsuario = new System.Windows.Forms.DataGridView();
             this.btnCrearU = new System.Windows.Forms.Button();
             this.btnEliminarU = new System.Windows.Forms.Button();
-            this.uscCrearUsuario1 = new Parcial02_001591619_JESA.uscCrearUsuario();
             this.btnRefrescar = new System.Windows.Forms.Button();
+            this.uscCrearUsuario1 = new Parcial02_001591619_JESA.uscCrearUsuario();
             this.tabAdmin.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -170,6 +170,7 @@
             this.btnCrearU.TabIndex = 6;
             this.btnCrearU.Text = "Crear";
             this.btnCrearU.UseVisualStyleBackColor = false;
+            this.btnCrearU.Click += new System.EventHandler(this.btnCrearU_Click);
             // 
             // btnEliminarU
             // 
@@ -183,6 +184,21 @@
             this.btnEliminarU.TabIndex = 7;
             this.btnEliminarU.Text = "Eliminar";
             this.btnEliminarU.UseVisualStyleBackColor = false;
+            this.btnEliminarU.Click += new System.EventHandler(this.btnEliminarU_Click);
+            // 
+            // btnRefrescar
+            // 
+            this.btnRefrescar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnRefrescar.BackColor = System.Drawing.Color.SlateBlue;
+            this.btnRefrescar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefrescar.ForeColor = System.Drawing.Color.White;
+            this.btnRefrescar.Location = new System.Drawing.Point(144, 449);
+            this.btnRefrescar.Name = "btnRefrescar";
+            this.btnRefrescar.Size = new System.Drawing.Size(278, 44);
+            this.btnRefrescar.TabIndex = 9;
+            this.btnRefrescar.Text = "Refrescar";
+            this.btnRefrescar.UseVisualStyleBackColor = false;
+            this.btnRefrescar.Click += new System.EventHandler(this.btnRefrescar_Click);
             // 
             // uscCrearUsuario1
             // 
@@ -194,19 +210,6 @@
             this.uscCrearUsuario1.Size = new System.Drawing.Size(561, 440);
             this.uscCrearUsuario1.TabIndex = 8;
             // 
-            // btnRefrescar
-            // 
-            this.btnRefrescar.BackColor = System.Drawing.Color.SlateBlue;
-            this.btnRefrescar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnRefrescar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRefrescar.ForeColor = System.Drawing.Color.White;
-            this.btnRefrescar.Location = new System.Drawing.Point(3, 449);
-            this.btnRefrescar.Name = "btnRefrescar";
-            this.btnRefrescar.Size = new System.Drawing.Size(561, 44);
-            this.btnRefrescar.TabIndex = 9;
-            this.btnRefrescar.Text = "Refrescar";
-            this.btnRefrescar.UseVisualStyleBackColor = false;
-            // 
             // frmAccesoAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -215,6 +218,7 @@
             this.Controls.Add(this.tabAdmin);
             this.Name = "frmAccesoAdmin";
             this.Text = "frmAccesoAdmin";
+            this.Load += new System.EventHandler(this.frmAccesoAdmin_Load);
             this.tabAdmin.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);

@@ -34,5 +34,19 @@ namespace Parcial02_001591619_JESA
 
             cmbUsuario.DataSource = usersCombo;
         }
+
+        private void btnEliminarU_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ConnectionDB.ExecuteNonQuery("DELETE FROM appuser " +
+                                             $"WHERE username='{cmbUsuario.SelectedItem.ToString()}'");
+                MessageBox.Show("Se eleimino el usuario!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ha ocurrido un ERROR!");
+            }
+        }
     }
 }
