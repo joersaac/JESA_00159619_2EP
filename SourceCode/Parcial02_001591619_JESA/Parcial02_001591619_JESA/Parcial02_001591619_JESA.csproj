@@ -110,6 +110,12 @@
     <Compile Include="uscCrearUsuario.Designer.cs">
       <DependentUpon>uscCrearUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="uscEliminarUsuario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uscEliminarUsuario.Designer.cs">
+      <DependentUpon>uscEliminarUsuario.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmAccesoAdmin.resx">
       <DependentUpon>frmAccesoAdmin.cs</DependentUpon>
     </EmbeddedResource>
@@ -130,6 +136,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="uscCrearUsuario.resx">
       <DependentUpon>uscCrearUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uscEliminarUsuario.resx">
+      <DependentUpon>uscEliminarUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
