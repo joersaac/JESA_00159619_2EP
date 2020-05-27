@@ -40,6 +40,8 @@
             this.dgvUsuario = new System.Windows.Forms.DataGridView();
             this.btnCrearU = new System.Windows.Forms.Button();
             this.btnEliminarU = new System.Windows.Forms.Button();
+            this.uscCrearUsuario1 = new Parcial02_001591619_JESA.uscCrearUsuario();
+            this.btnRefrescar = new System.Windows.Forms.Button();
             this.tabAdmin.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -59,7 +61,7 @@
             this.tabAdmin.Location = new System.Drawing.Point(0, 0);
             this.tabAdmin.Name = "tabAdmin";
             this.tabAdmin.SelectedIndex = 0;
-            this.tabAdmin.Size = new System.Drawing.Size(857, 500);
+            this.tabAdmin.Size = new System.Drawing.Size(1148, 535);
             this.tabAdmin.TabIndex = 0;
             // 
             // tabPage1
@@ -70,7 +72,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(849, 467);
+            this.tabPage1.Size = new System.Drawing.Size(1140, 502);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "General";
             // 
@@ -81,7 +83,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(849, 467);
+            this.tabPage2.Size = new System.Drawing.Size(1140, 502);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Mantenimiento usuario";
             // 
@@ -90,7 +92,7 @@
             this.tabPage3.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.tabPage3.Location = new System.Drawing.Point(4, 29);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(849, 467);
+            this.tabPage3.Size = new System.Drawing.Size(1140, 502);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Mantenimiento negocios";
             // 
@@ -99,7 +101,7 @@
             this.tabPage4.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.tabPage4.Location = new System.Drawing.Point(4, 29);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(849, 467);
+            this.tabPage4.Size = new System.Drawing.Size(1140, 502);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Mantenimiento productos";
             // 
@@ -108,15 +110,16 @@
             this.tabPage5.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.tabPage5.Location = new System.Drawing.Point(4, 29);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(849, 467);
+            this.tabPage5.Size = new System.Drawing.Size(1140, 502);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Historial ordenes";
             // 
             // picLogo
             // 
+            this.picLogo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.picLogo.Image = ((System.Drawing.Image)(resources.GetObject("picLogo.Image")));
             this.picLogo.InitialImage = ((System.Drawing.Image)(resources.GetObject("picLogo.InitialImage")));
-            this.picLogo.Location = new System.Drawing.Point(292, 78);
+            this.picLogo.Location = new System.Drawing.Point(427, 109);
             this.picLogo.Name = "picLogo";
             this.picLogo.Size = new System.Drawing.Size(268, 256);
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -129,16 +132,18 @@
             this.tloMantenimientoU.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tloMantenimientoU.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tloMantenimientoU.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tloMantenimientoU.Controls.Add(this.btnRefrescar, 0, 1);
             this.tloMantenimientoU.Controls.Add(this.dgvUsuario, 0, 0);
             this.tloMantenimientoU.Controls.Add(this.btnCrearU, 1, 1);
             this.tloMantenimientoU.Controls.Add(this.btnEliminarU, 2, 1);
+            this.tloMantenimientoU.Controls.Add(this.uscCrearUsuario1, 1, 0);
             this.tloMantenimientoU.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tloMantenimientoU.Location = new System.Drawing.Point(3, 3);
             this.tloMantenimientoU.Name = "tloMantenimientoU";
             this.tloMantenimientoU.RowCount = 2;
             this.tloMantenimientoU.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
             this.tloMantenimientoU.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tloMantenimientoU.Size = new System.Drawing.Size(843, 461);
+            this.tloMantenimientoU.Size = new System.Drawing.Size(1134, 496);
             this.tloMantenimientoU.TabIndex = 0;
             // 
             // dgvUsuario
@@ -149,9 +154,8 @@
             this.dgvUsuario.Location = new System.Drawing.Point(3, 3);
             this.dgvUsuario.Name = "dgvUsuario";
             this.dgvUsuario.RowHeadersWidth = 62;
-            this.tloMantenimientoU.SetRowSpan(this.dgvUsuario, 2);
             this.dgvUsuario.RowTemplate.Height = 28;
-            this.dgvUsuario.Size = new System.Drawing.Size(415, 455);
+            this.dgvUsuario.Size = new System.Drawing.Size(561, 440);
             this.dgvUsuario.TabIndex = 0;
             // 
             // btnCrearU
@@ -160,9 +164,9 @@
             this.btnCrearU.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnCrearU.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCrearU.ForeColor = System.Drawing.Color.White;
-            this.btnCrearU.Location = new System.Drawing.Point(424, 417);
+            this.btnCrearU.Location = new System.Drawing.Point(570, 449);
             this.btnCrearU.Name = "btnCrearU";
-            this.btnCrearU.Size = new System.Drawing.Size(204, 41);
+            this.btnCrearU.Size = new System.Drawing.Size(277, 44);
             this.btnCrearU.TabIndex = 6;
             this.btnCrearU.Text = "Crear";
             this.btnCrearU.UseVisualStyleBackColor = false;
@@ -173,18 +177,41 @@
             this.btnEliminarU.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnEliminarU.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminarU.ForeColor = System.Drawing.Color.White;
-            this.btnEliminarU.Location = new System.Drawing.Point(634, 417);
+            this.btnEliminarU.Location = new System.Drawing.Point(853, 449);
             this.btnEliminarU.Name = "btnEliminarU";
-            this.btnEliminarU.Size = new System.Drawing.Size(206, 41);
+            this.btnEliminarU.Size = new System.Drawing.Size(278, 44);
             this.btnEliminarU.TabIndex = 7;
             this.btnEliminarU.Text = "Eliminar";
             this.btnEliminarU.UseVisualStyleBackColor = false;
+            // 
+            // uscCrearUsuario1
+            // 
+            this.uscCrearUsuario1.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.tloMantenimientoU.SetColumnSpan(this.uscCrearUsuario1, 2);
+            this.uscCrearUsuario1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uscCrearUsuario1.Location = new System.Drawing.Point(570, 3);
+            this.uscCrearUsuario1.Name = "uscCrearUsuario1";
+            this.uscCrearUsuario1.Size = new System.Drawing.Size(561, 440);
+            this.uscCrearUsuario1.TabIndex = 8;
+            // 
+            // btnRefrescar
+            // 
+            this.btnRefrescar.BackColor = System.Drawing.Color.SlateBlue;
+            this.btnRefrescar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnRefrescar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefrescar.ForeColor = System.Drawing.Color.White;
+            this.btnRefrescar.Location = new System.Drawing.Point(3, 449);
+            this.btnRefrescar.Name = "btnRefrescar";
+            this.btnRefrescar.Size = new System.Drawing.Size(561, 44);
+            this.btnRefrescar.TabIndex = 9;
+            this.btnRefrescar.Text = "Refrescar";
+            this.btnRefrescar.UseVisualStyleBackColor = false;
             // 
             // frmAccesoAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(857, 500);
+            this.ClientSize = new System.Drawing.Size(1148, 535);
             this.Controls.Add(this.tabAdmin);
             this.Name = "frmAccesoAdmin";
             this.Text = "frmAccesoAdmin";
@@ -211,5 +238,7 @@
         private System.Windows.Forms.DataGridView dgvUsuario;
         private System.Windows.Forms.Button btnCrearU;
         private System.Windows.Forms.Button btnEliminarU;
+        private uscCrearUsuario uscCrearUsuario1;
+        private System.Windows.Forms.Button btnRefrescar;
     }
 }

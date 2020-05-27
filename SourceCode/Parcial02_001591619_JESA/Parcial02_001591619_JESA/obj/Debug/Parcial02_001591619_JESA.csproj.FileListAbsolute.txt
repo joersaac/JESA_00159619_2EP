@@ -31,3 +31,5 @@ C:\Users\JOAQUIN SANTOS\Documents\Repositorios\JESA_00159619_2EP\SourceCode\Parc
 C:\Users\JOAQUIN SANTOS\Documents\Repositorios\JESA_00159619_2EP\SourceCode\Parcial02_001591619_JESA\Parcial02_001591619_JESA\obj\Debug\Parcial02_001591619_JESA.exe
 C:\Users\JOAQUIN SANTOS\Documents\Repositorios\JESA_00159619_2EP\SourceCode\Parcial02_001591619_JESA\Parcial02_001591619_JESA\obj\Debug\Parcial02_001591619_JESA.pdb
 C:\Users\JOAQUIN SANTOS\Documents\Repositorios\JESA_00159619_2EP\SourceCode\Parcial02_001591619_JESA\Parcial02_001591619_JESA\obj\Debug\Parcial02_001591619_JESA.frmCambioContra.resources
+C:\Users\JOAQUIN SANTOS\Documents\Repositorios\JESA_00159619_2EP\SourceCode\Parcial02_001591619_JESA\Parcial02_001591619_JESA\obj\Debug\Parcial02_001591619_JESA.frmAccesoAdmin.resources
+C:\Users\JOAQUIN SANTOS\Documents\Repositorios\JESA_00159619_2EP\SourceCode\Parcial02_001591619_JESA\Parcial02_001591619_JESA\obj\Debug\Parcial02_001591619_JESA.uscCrearUsuario.resources

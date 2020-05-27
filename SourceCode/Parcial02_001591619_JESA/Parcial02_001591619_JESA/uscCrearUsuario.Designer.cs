@@ -29,13 +29,14 @@
         private void InitializeComponent()
         {
             this.tlpCrearUsuario = new System.Windows.Forms.TableLayoutPanel();
+            this.radNormal = new System.Windows.Forms.RadioButton();
             this.lblFullName = new System.Windows.Forms.Label();
             this.btnCrearU = new System.Windows.Forms.Button();
             this.lblUserName = new System.Windows.Forms.Label();
             this.lblTipoAcces = new System.Windows.Forms.Label();
             this.txbFullName = new System.Windows.Forms.TextBox();
             this.txbUserName = new System.Windows.Forms.TextBox();
-            this.txbTipoAcces = new System.Windows.Forms.TextBox();
+            this.radAdmin = new System.Windows.Forms.RadioButton();
             this.tlpCrearUsuario.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,13 +46,14 @@
             this.tlpCrearUsuario.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tlpCrearUsuario.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tlpCrearUsuario.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tlpCrearUsuario.Controls.Add(this.radNormal, 2, 5);
             this.tlpCrearUsuario.Controls.Add(this.lblFullName, 0, 1);
             this.tlpCrearUsuario.Controls.Add(this.btnCrearU, 0, 7);
             this.tlpCrearUsuario.Controls.Add(this.lblUserName, 0, 3);
             this.tlpCrearUsuario.Controls.Add(this.lblTipoAcces, 0, 5);
             this.tlpCrearUsuario.Controls.Add(this.txbFullName, 1, 1);
             this.tlpCrearUsuario.Controls.Add(this.txbUserName, 1, 3);
-            this.tlpCrearUsuario.Controls.Add(this.txbTipoAcces, 1, 5);
+            this.tlpCrearUsuario.Controls.Add(this.radAdmin, 1, 5);
             this.tlpCrearUsuario.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlpCrearUsuario.Location = new System.Drawing.Point(0, 0);
             this.tlpCrearUsuario.Name = "tlpCrearUsuario";
@@ -67,6 +69,19 @@
             this.tlpCrearUsuario.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
             this.tlpCrearUsuario.Size = new System.Drawing.Size(688, 462);
             this.tlpCrearUsuario.TabIndex = 0;
+            // 
+            // radNormal
+            // 
+            this.radNormal.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.radNormal.AutoSize = true;
+            this.radNormal.ForeColor = System.Drawing.Color.White;
+            this.radNormal.Location = new System.Drawing.Point(560, 268);
+            this.radNormal.Name = "radNormal";
+            this.radNormal.Size = new System.Drawing.Size(84, 24);
+            this.radNormal.TabIndex = 13;
+            this.radNormal.TabStop = true;
+            this.radNormal.Text = "Normal";
+            this.radNormal.UseVisualStyleBackColor = true;
             // 
             // lblFullName
             // 
@@ -94,6 +109,7 @@
             this.btnCrearU.TabIndex = 7;
             this.btnCrearU.Text = "Crear";
             this.btnCrearU.UseVisualStyleBackColor = false;
+            this.btnCrearU.Click += new System.EventHandler(this.btnCrearU_Click);
             // 
             // lblUserName
             // 
@@ -139,14 +155,18 @@
             this.txbUserName.Size = new System.Drawing.Size(227, 26);
             this.txbUserName.TabIndex = 11;
             // 
-            // txbTipoAcces
+            // radAdmin
             // 
-            this.txbTipoAcces.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.tlpCrearUsuario.SetColumnSpan(this.txbTipoAcces, 2);
-            this.txbTipoAcces.Location = new System.Drawing.Point(402, 267);
-            this.txbTipoAcces.Name = "txbTipoAcces";
-            this.txbTipoAcces.Size = new System.Drawing.Size(227, 26);
-            this.txbTipoAcces.TabIndex = 12;
+            this.radAdmin.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.radAdmin.AutoSize = true;
+            this.radAdmin.ForeColor = System.Drawing.Color.White;
+            this.radAdmin.Location = new System.Drawing.Point(364, 268);
+            this.radAdmin.Name = "radAdmin";
+            this.radAdmin.Size = new System.Drawing.Size(132, 24);
+            this.radAdmin.TabIndex = 12;
+            this.radAdmin.TabStop = true;
+            this.radAdmin.Text = "Administrador";
+            this.radAdmin.UseVisualStyleBackColor = true;
             // 
             // uscCrearUsuario
             // 
@@ -156,6 +176,7 @@
             this.Controls.Add(this.tlpCrearUsuario);
             this.Name = "uscCrearUsuario";
             this.Size = new System.Drawing.Size(688, 462);
+            this.Load += new System.EventHandler(this.uscCrearUsuario_Load);
             this.tlpCrearUsuario.ResumeLayout(false);
             this.tlpCrearUsuario.PerformLayout();
             this.ResumeLayout(false);
@@ -171,6 +192,7 @@
         private System.Windows.Forms.Label lblTipoAcces;
         private System.Windows.Forms.TextBox txbFullName;
         private System.Windows.Forms.TextBox txbUserName;
-        private System.Windows.Forms.TextBox txbTipoAcces;
+        private System.Windows.Forms.RadioButton radNormal;
+        private System.Windows.Forms.RadioButton radAdmin;
     }
 }
