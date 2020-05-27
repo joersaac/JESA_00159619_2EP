@@ -19,7 +19,20 @@ namespace Parcial02_001591619_JESA
 
         private void Registro_Load(object sender, EventArgs e)
         {
+            Load_list();
+        }
 
+        private void Load_list()
+        {
+            var users = ConnectionDB.ExecuteQuery("SELECT username FROM appuser");
+            var usersCombo = new List<string>();
+
+            foreach (DataRow dr in users.Rows)
+            {
+                usersCombo.Add(dr[0].ToString());
+            }
+
+            cmbUsuario.DataSource = usersCombo;
         }
     }
 }

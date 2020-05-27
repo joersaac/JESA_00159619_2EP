@@ -143,6 +143,7 @@
             this.btnCC.TabIndex = 10;
             this.btnCC.Text = "Cambiar contraseña";
             this.btnCC.UseVisualStyleBackColor = false;
+            this.btnCC.Click += new System.EventHandler(this.btnCC_Click);
             // 
             // btnCancelar
             // 
@@ -155,6 +156,7 @@
             this.btnCancelar.TabIndex = 11;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // frmCambioContra
             // 
@@ -175,6 +177,7 @@
             this.Controls.Add(this.picLogo);
             this.Name = "frmCambioContra";
             this.Text = "Cambio contraseña";
+            this.Load += new System.EventHandler(this.frmCambioContra_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
