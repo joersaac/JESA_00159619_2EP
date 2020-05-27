@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Parcial02_001591619_JESA
 {
-    public partial class Form1 : Form
+    public partial class frmCambioContra : Form
     {
-        public Form1()
+        public frmCambioContra()
         {
             InitializeComponent();
         }

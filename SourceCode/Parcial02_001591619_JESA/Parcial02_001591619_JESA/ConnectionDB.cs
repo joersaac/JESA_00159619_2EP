@@ -6,7 +6,7 @@ namespace Parcial02_001591619_JESA
     static class ConnectionDB
     {
         private static string host = "127.0.0.1",
-           database = "Farmacia_gato_triste",
+           database = "Parcial02",
            userId = "postgres",
            password = "0df3f9c8";
 

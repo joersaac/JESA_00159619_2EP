@@ -16,7 +16,7 @@ namespace Parcial02_001591619_JESA
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new frmRegistro());
         }
     }
 }
