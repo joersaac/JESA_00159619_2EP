@@ -101,6 +101,7 @@
             this.btnCC.TabIndex = 5;
             this.btnCC.Text = "Cambiar contraseña";
             this.btnCC.UseVisualStyleBackColor = false;
+            this.btnCC.Click += new System.EventHandler(this.btnCC_Click);
             // 
             // btnRegistrarse
             // 

@@ -34,5 +34,11 @@ namespace Parcial02_001591619_JESA
 
             cmbUsuario.DataSource = usersCombo;
         }
+
+        private void btnCC_Click(object sender, EventArgs e)
+        {
+            frmCambioContra newWindow = new frmCambioContra();
+            newWindow.ShowDialog();
+        }
     }
 }
