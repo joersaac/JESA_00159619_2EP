@@ -44,11 +44,12 @@
             this.btnEliminarN = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.uscCrearUsuario1 = new Parcial02_001591619_JESA.uscCrearUsuario();
-            this.uscAnadirNegocio1 = new Parcial02_001591619_JESA.uscAnadirNegocio();
             this.tlpMantenimientoP = new System.Windows.Forms.TableLayoutPanel();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.uscCrearUsuario1 = new Parcial02_001591619_JESA.uscCrearUsuario();
+            this.uscAnadirNegocio1 = new Parcial02_001591619_JESA.uscAnadirNegocio();
+            this.uscAnadirProducto1 = new Parcial02_001591619_JESA.uscAnadirProducto();
             this.tabAdmin.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
@@ -273,6 +274,52 @@
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Historial ordenes";
             // 
+            // tlpMantenimientoP
+            // 
+            this.tlpMantenimientoP.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.tlpMantenimientoP.ColumnCount = 2;
+            this.tlpMantenimientoP.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpMantenimientoP.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpMantenimientoP.Controls.Add(this.button2, 0, 1);
+            this.tlpMantenimientoP.Controls.Add(this.button1, 0, 1);
+            this.tlpMantenimientoP.Controls.Add(this.uscAnadirProducto1, 0, 0);
+            this.tlpMantenimientoP.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tlpMantenimientoP.Location = new System.Drawing.Point(0, 0);
+            this.tlpMantenimientoP.Name = "tlpMantenimientoP";
+            this.tlpMantenimientoP.RowCount = 2;
+            this.tlpMantenimientoP.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
+            this.tlpMantenimientoP.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tlpMantenimientoP.Size = new System.Drawing.Size(757, 322);
+            this.tlpMantenimientoP.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button1.BackColor = System.Drawing.Color.SlateBlue;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(494, 291);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(146, 29);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Añadir";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button2.BackColor = System.Drawing.Color.SlateBlue;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(131, 291);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(115, 29);
+            this.button2.TabIndex = 12;
+            this.button2.Text = "Eliminar";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
             // uscCrearUsuario1
             // 
             this.uscCrearUsuario1.BackColor = System.Drawing.Color.DarkSlateBlue;
@@ -295,50 +342,16 @@
             this.uscAnadirNegocio1.Size = new System.Drawing.Size(753, 285);
             this.uscAnadirNegocio1.TabIndex = 9;
             // 
-            // tlpMantenimientoP
+            // uscAnadirProducto1
             // 
-            this.tlpMantenimientoP.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.tlpMantenimientoP.ColumnCount = 2;
-            this.tlpMantenimientoP.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tlpMantenimientoP.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tlpMantenimientoP.Controls.Add(this.button2, 0, 1);
-            this.tlpMantenimientoP.Controls.Add(this.button1, 0, 1);
-            this.tlpMantenimientoP.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tlpMantenimientoP.Location = new System.Drawing.Point(0, 0);
-            this.tlpMantenimientoP.Name = "tlpMantenimientoP";
-            this.tlpMantenimientoP.RowCount = 2;
-            this.tlpMantenimientoP.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
-            this.tlpMantenimientoP.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tlpMantenimientoP.Size = new System.Drawing.Size(757, 322);
-            this.tlpMantenimientoP.TabIndex = 0;
-            // 
-            // button1
-            // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.BackColor = System.Drawing.Color.SlateBlue;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(116, 291);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(146, 29);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Añadir";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button2.BackColor = System.Drawing.Color.SlateBlue;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(510, 291);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(115, 29);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Eliminar";
-            this.button2.UseVisualStyleBackColor = false;
+            this.uscAnadirProducto1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.uscAnadirProducto1.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.tlpMantenimientoP.SetColumnSpan(this.uscAnadirProducto1, 2);
+            this.uscAnadirProducto1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uscAnadirProducto1.Location = new System.Drawing.Point(3, 3);
+            this.uscAnadirProducto1.Name = "uscAnadirProducto1";
+            this.uscAnadirProducto1.Size = new System.Drawing.Size(751, 283);
+            this.uscAnadirProducto1.TabIndex = 13;
             // 
             // frmAccesoAdmin
             // 
@@ -386,5 +399,6 @@
         private System.Windows.Forms.TableLayoutPanel tlpMantenimientoP;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private uscAnadirProducto uscAnadirProducto1;
     }
 }

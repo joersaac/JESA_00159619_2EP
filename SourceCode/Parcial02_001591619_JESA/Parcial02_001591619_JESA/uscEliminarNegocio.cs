@@ -40,13 +40,13 @@ namespace Parcial02_001591619_JESA
             try
             {
                 string auxComboBox = "";
-                auxComboBox += cmbNegocios.SelectedItem.ToString()[0];
-                int limite = LimiteFinal(auxComboBox);
-                int auxid = 0;
+                int limite = LimiteFinal(cmbNegocios.SelectedItem.ToString());
                 if (limite < 0)
-                    auxid=Convert.ToInt16(auxComboBox.Substring(0,limite));
+                    auxComboBox += cmbNegocios.SelectedItem.ToString().Substring(0, limite);
                 else
-                    auxid = Convert.ToInt16(auxComboBox[0]);
+                    auxComboBox += cmbNegocios.SelectedItem.ToString()[0];
+                int auxid = 0;
+                auxid = Convert.ToInt16(auxComboBox);
                 ConnectionDB.ExecuteNonQuery("DELETE FROM business " +
                                              $"WHERE idbusiness ={auxid}");
                 MessageBox.Show("Se eleimino el negocio!");

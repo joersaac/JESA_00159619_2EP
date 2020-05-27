@@ -36,3 +36,4 @@ C:\Users\JOAQUIN SANTOS\Documents\Repositorios\JESA_00159619_2EP\SourceCode\Parc
 C:\Users\JOAQUIN SANTOS\Documents\Repositorios\JESA_00159619_2EP\SourceCode\Parcial02_001591619_JESA\Parcial02_001591619_JESA\obj\Debug\Parcial02_001591619_JESA.uscEliminarUsuario.resources
 C:\Users\JOAQUIN SANTOS\Documents\Repositorios\JESA_00159619_2EP\SourceCode\Parcial02_001591619_JESA\Parcial02_001591619_JESA\obj\Debug\Parcial02_001591619_JESA.uscAnadirNegocio.resources
 C:\Users\JOAQUIN SANTOS\Documents\Repositorios\JESA_00159619_2EP\SourceCode\Parcial02_001591619_JESA\Parcial02_001591619_JESA\obj\Debug\Parcial02_001591619_JESA.uscEliminarNegocio.resources
+C:\Users\JOAQUIN SANTOS\Documents\Repositorios\JESA_00159619_2EP\SourceCode\Parcial02_001591619_JESA\Parcial02_001591619_JESA\obj\Debug\Parcial02_001591619_JESA.uscAnadirProducto.resources

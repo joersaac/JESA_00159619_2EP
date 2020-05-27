@@ -32,8 +32,8 @@
             this.cmbNegocios = new System.Windows.Forms.ComboBox();
             this.lblBusiName = new System.Windows.Forms.Label();
             this.btnAnadir = new System.Windows.Forms.Button();
-            this.txbDescripcion = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.txbItemName = new System.Windows.Forms.TextBox();
+            this.lblItemName = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,8 +46,8 @@
             this.tableLayoutPanel1.Controls.Add(this.cmbNegocios, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.lblBusiName, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.btnAnadir, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.txbDescripcion, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.txbItemName, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.lblItemName, 0, 3);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -99,29 +99,30 @@
             this.btnAnadir.TabIndex = 15;
             this.btnAnadir.Text = "Añadir Producto";
             this.btnAnadir.UseVisualStyleBackColor = false;
+            this.btnAnadir.Click += new System.EventHandler(this.btnAnadir_Click);
             // 
-            // txbDescripcion
+            // txbItemName
             // 
-            this.txbDescripcion.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txbDescripcion.Location = new System.Drawing.Point(180, 151);
-            this.txbDescripcion.Margin = new System.Windows.Forms.Padding(2);
-            this.txbDescripcion.Name = "txbDescripcion";
-            this.txbDescripcion.Size = new System.Drawing.Size(168, 20);
-            this.txbDescripcion.TabIndex = 16;
+            this.txbItemName.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txbItemName.Location = new System.Drawing.Point(180, 151);
+            this.txbItemName.Margin = new System.Windows.Forms.Padding(2);
+            this.txbItemName.Name = "txbItemName";
+            this.txbItemName.Size = new System.Drawing.Size(168, 20);
+            this.txbItemName.TabIndex = 16;
             // 
-            // label1
+            // lblItemName
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(22, 151);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(131, 20);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "Nombre Negocio:";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblItemName.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblItemName.AutoSize = true;
+            this.lblItemName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblItemName.ForeColor = System.Drawing.Color.White;
+            this.lblItemName.Location = new System.Drawing.Point(19, 151);
+            this.lblItemName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblItemName.Name = "lblItemName";
+            this.lblItemName.Size = new System.Drawing.Size(137, 20);
+            this.lblItemName.TabIndex = 17;
+            this.lblItemName.Text = "Nombre Producto:";
+            this.lblItemName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // uscAnadirProducto
             // 
@@ -145,7 +146,7 @@
         private System.Windows.Forms.ComboBox cmbNegocios;
         private System.Windows.Forms.Label lblBusiName;
         private System.Windows.Forms.Button btnAnadir;
-        private System.Windows.Forms.TextBox txbDescripcion;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txbItemName;
+        private System.Windows.Forms.Label lblItemName;
     }
 }
