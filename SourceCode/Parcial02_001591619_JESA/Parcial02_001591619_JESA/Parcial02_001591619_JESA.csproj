@@ -78,6 +78,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConnectionDB.cs" />
+    <Compile Include="ControlDeUsuario.cs" />
     <Compile Include="frmAccesoAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +147,12 @@
     <Compile Include="uscEliminarUsuario.Designer.cs">
       <DependentUpon>uscEliminarUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="uscModificarDireccion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uscModificarDireccion.Designer.cs">
+      <DependentUpon>uscModificarDireccion.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmAccesoAdmin.resx">
       <DependentUpon>frmAccesoAdmin.cs</DependentUpon>
     </EmbeddedResource>
@@ -187,6 +194,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="uscEliminarUsuario.resx">
       <DependentUpon>uscEliminarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uscModificarDireccion.resx">
+      <DependentUpon>uscModificarDireccion.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

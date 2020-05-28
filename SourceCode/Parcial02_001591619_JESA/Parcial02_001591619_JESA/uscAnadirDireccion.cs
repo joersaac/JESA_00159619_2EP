@@ -12,10 +12,11 @@ namespace Parcial02_001591619_JESA
 {
     public partial class uscAnadirDireccion : UserControl
     {
-        private string username = "";
+        private string username;
         public uscAnadirDireccion()
         {
             InitializeComponent();
+            username = ControlDeUsuario.DevolverUserName();
         }
 
         private void btnAnadir_Click(object sender, EventArgs e)
@@ -35,7 +36,7 @@ namespace Parcial02_001591619_JESA
                     try
                     {
                         ConnectionDB.ExecuteNonQuery("INSERT INTO address(iduser,address) " +
-                            $"VALUES ({OptenerId()},'{txbDireccion}')");
+                            $"VALUES ({OptenerId()},'{txbDireccion.Text}')");
                         MessageBox.Show("Se ha ingresado el negocio!");
                     }
                     catch (Exception ex)
@@ -67,7 +68,8 @@ namespace Parcial02_001591619_JESA
             var dti = ConnectionDB.ExecuteQuery("SELECT iduser FROM appuser " +
                 $"WHERE username='{username}'");
             var dri = dti.Rows[0];
-            int auxid = Convert.ToInt16(dri);
+            string auxstr = dri[0].ToString();
+            int auxid = Convert.ToInt16(auxstr);
             return auxid;
         }
     }

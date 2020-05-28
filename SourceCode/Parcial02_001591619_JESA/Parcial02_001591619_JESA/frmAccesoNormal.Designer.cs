@@ -38,8 +38,8 @@
             this.btnAnadir = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.uscAnadirDireccion1 = new Parcial02_001591619_JESA.uscAnadirDireccion();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
@@ -78,7 +78,7 @@
             this.picLogo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.picLogo.Image = ((System.Drawing.Image)(resources.GetObject("picLogo.Image")));
             this.picLogo.InitialImage = ((System.Drawing.Image)(resources.GetObject("picLogo.InitialImage")));
-            this.picLogo.Location = new System.Drawing.Point(490, 103);
+            this.picLogo.Location = new System.Drawing.Point(486, 183);
             this.picLogo.Name = "picLogo";
             this.picLogo.Size = new System.Drawing.Size(268, 255);
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -172,16 +172,6 @@
             this.button2.Text = "Crear";
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // tabPage3
-            // 
-            this.tabPage3.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.tabPage3.Location = new System.Drawing.Point(4, 29);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1192, 659);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Ordenes";
-            // 
             // uscAnadirDireccion1
             // 
             this.uscAnadirDireccion1.BackColor = System.Drawing.Color.DarkSlateBlue;
@@ -192,6 +182,16 @@
             this.uscAnadirDireccion1.Name = "uscAnadirDireccion1";
             this.uscAnadirDireccion1.Size = new System.Drawing.Size(585, 574);
             this.uscAnadirDireccion1.TabIndex = 10;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.tabPage3.Location = new System.Drawing.Point(4, 29);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(1192, 659);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Ordenes";
             // 
             // frmAccesoNormal
             // 
