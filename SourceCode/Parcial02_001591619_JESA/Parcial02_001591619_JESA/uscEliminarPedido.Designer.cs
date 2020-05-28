@@ -65,7 +65,7 @@
             this.btnEliminarOrden.TabIndex = 19;
             this.btnEliminarOrden.Text = "Eliminar orden";
             this.btnEliminarOrden.UseVisualStyleBackColor = false;
-            this.btnEliminarOrden.Click += new System.EventHandler(this.btnRealizarOrden_Click);
+            this.btnEliminarOrden.Click += new System.EventHandler(this.btnEliminarOrden_Click);
             // 
             // cmbOrdenes
             // 

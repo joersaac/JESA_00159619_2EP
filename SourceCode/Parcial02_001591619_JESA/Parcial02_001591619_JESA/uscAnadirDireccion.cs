@@ -73,9 +73,5 @@ namespace Parcial02_001591619_JESA
             return auxid;
         }
 
-        private void uscAnadirDireccion_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

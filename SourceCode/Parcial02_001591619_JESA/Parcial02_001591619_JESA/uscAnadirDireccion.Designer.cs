@@ -99,7 +99,6 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "uscAnadirDireccion";
             this.Size = new System.Drawing.Size(604, 569);
-            this.Load += new System.EventHandler(this.uscAnadirDireccion_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);

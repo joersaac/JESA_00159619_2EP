@@ -57,7 +57,7 @@ namespace Parcial02_001591619_JESA
             return limite;
         }
 
-        private void btnRealizarOrden_Click(object sender, EventArgs e)
+        private void btnEliminarOrden_Click(object sender, EventArgs e)
         {
             try
             {
