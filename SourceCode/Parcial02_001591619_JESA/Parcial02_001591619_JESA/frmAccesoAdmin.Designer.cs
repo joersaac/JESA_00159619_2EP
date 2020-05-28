@@ -50,6 +50,11 @@
             this.uscAnadirProducto1 = new Parcial02_001591619_JESA.uscAnadirProducto();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.dgvHistorial = new System.Windows.Forms.DataGridView();
+            this.lblUserName = new System.Windows.Forms.Label();
+            this.txbUserName = new System.Windows.Forms.TextBox();
             this.tabAdmin.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
@@ -60,6 +65,9 @@
             this.tlpMantenimientoN.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.tlpMantenimientoP.SuspendLayout();
+            this.tabPage5.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHistorial)).BeginInit();
             this.SuspendLayout();
             // 
             // tabAdmin
@@ -348,6 +356,7 @@
             // tabPage5
             // 
             this.tabPage5.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.tabPage5.Controls.Add(this.tableLayoutPanel1);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage5.Name = "tabPage5";
@@ -355,10 +364,81 @@
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Historial ordenes";
             // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.Controls.Add(this.btnBuscar, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.dgvHistorial, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.lblUserName, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.txbUserName, 2, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(757, 322);
+            this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnBuscar.BackColor = System.Drawing.Color.SlateBlue;
+            this.tableLayoutPanel1.SetColumnSpan(this.btnBuscar, 2);
+            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.ForeColor = System.Drawing.Color.White;
+            this.btnBuscar.Location = new System.Drawing.Point(469, 213);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(196, 57);
+            this.btnBuscar.TabIndex = 11;
+            this.btnBuscar.Text = "Buscar historial de usuario";
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            // 
+            // dgvHistorial
+            // 
+            this.dgvHistorial.BackgroundColor = System.Drawing.Color.White;
+            this.dgvHistorial.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvHistorial.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvHistorial.Location = new System.Drawing.Point(3, 3);
+            this.dgvHistorial.Name = "dgvHistorial";
+            this.tableLayoutPanel1.SetRowSpan(this.dgvHistorial, 2);
+            this.dgvHistorial.Size = new System.Drawing.Size(372, 316);
+            this.dgvHistorial.TabIndex = 1;
+            // 
+            // lblUserName
+            // 
+            this.lblUserName.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblUserName.AutoSize = true;
+            this.lblUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserName.ForeColor = System.Drawing.Color.White;
+            this.lblUserName.Location = new System.Drawing.Point(399, 70);
+            this.lblUserName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblUserName.Name = "lblUserName";
+            this.lblUserName.Size = new System.Drawing.Size(147, 20);
+            this.lblUserName.TabIndex = 12;
+            this.lblUserName.Text = "Nombre de usuario:";
+            this.lblUserName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txbUserName
+            // 
+            this.txbUserName.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txbUserName.Location = new System.Drawing.Point(585, 70);
+            this.txbUserName.Margin = new System.Windows.Forms.Padding(2);
+            this.txbUserName.Name = "txbUserName";
+            this.txbUserName.Size = new System.Drawing.Size(153, 20);
+            this.txbUserName.TabIndex = 13;
+            // 
             // frmAccesoAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.ClientSize = new System.Drawing.Size(765, 348);
             this.Controls.Add(this.tabAdmin);
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -375,6 +455,10 @@
             this.tlpMantenimientoN.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
             this.tlpMantenimientoP.ResumeLayout(false);
+            this.tabPage5.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHistorial)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -402,5 +486,10 @@
         private System.Windows.Forms.Button btnEliminar;
         private uscAnadirProducto uscAnadirProducto1;
         private System.Windows.Forms.Button btnAnadir;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.DataGridView dgvHistorial;
+        private System.Windows.Forms.Label lblUserName;
+        private System.Windows.Forms.TextBox txbUserName;
     }
 }

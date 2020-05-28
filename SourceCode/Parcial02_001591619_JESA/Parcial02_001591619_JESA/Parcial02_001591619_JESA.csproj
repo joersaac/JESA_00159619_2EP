@@ -104,6 +104,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="uscAnadirDireccion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uscAnadirDireccion.Designer.cs">
+      <DependentUpon>uscAnadirDireccion.cs</DependentUpon>
+    </Compile>
     <Compile Include="uscAnadirNegocio.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -143,6 +149,9 @@
     <EmbeddedResource Include="frmAccesoAdmin.resx">
       <DependentUpon>frmAccesoAdmin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAccesoNormal.resx">
+      <DependentUpon>frmAccesoNormal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCambioContra.resx">
       <DependentUpon>frmCambioContra.cs</DependentUpon>
     </EmbeddedResource>
@@ -157,6 +166,9 @@
     </Compile>
     <EmbeddedResource Include="frmRegistro.resx">
       <DependentUpon>frmRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uscAnadirDireccion.resx">
+      <DependentUpon>uscAnadirDireccion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="uscAnadirNegocio.resx">
       <DependentUpon>uscAnadirNegocio.cs</DependentUpon>

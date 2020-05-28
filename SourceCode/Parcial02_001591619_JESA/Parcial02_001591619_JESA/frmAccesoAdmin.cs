@@ -42,6 +42,10 @@ namespace Parcial02_001591619_JESA
             }
         }
 
+        private void LoadHistory()
+        {
+
+        }
         private void btnEliminarU_Click(object sender, EventArgs e)
         {
             uscEliminarUsuario eu = new uscEliminarUsuario();
