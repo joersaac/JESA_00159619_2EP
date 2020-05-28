@@ -37,7 +37,7 @@ namespace Parcial02_001591619_JESA
                     {
                         ConnectionDB.ExecuteNonQuery("INSERT INTO address(iduser,address) " +
                             $"VALUES ({OptenerId()},'{txbDireccion.Text}')");
-                        MessageBox.Show("Se ha ingresado el negocio!");
+                        MessageBox.Show("Se ha ingresado la direccion!");
                     }
                     catch (Exception ex)
                     {
@@ -71,6 +71,11 @@ namespace Parcial02_001591619_JESA
             string auxstr = dri[0].ToString();
             int auxid = Convert.ToInt16(auxstr);
             return auxid;
+        }
+
+        private void uscAnadirDireccion_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

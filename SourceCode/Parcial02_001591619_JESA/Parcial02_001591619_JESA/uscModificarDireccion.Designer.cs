@@ -33,7 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnModificar = new System.Windows.Forms.Button();
             this.txbDireccion = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbDirrecion = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,7 +47,7 @@
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.btnModificar, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.txbDireccion, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox1, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.cmbDirrecion, 1, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -101,6 +101,7 @@
             this.btnModificar.TabIndex = 18;
             this.btnModificar.Text = "Modificar Direccion";
             this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // txbDireccion
             // 
@@ -110,14 +111,14 @@
             this.txbDireccion.Size = new System.Drawing.Size(250, 26);
             this.txbDireccion.TabIndex = 19;
             // 
-            // comboBox1
+            // cmbDirrecion
             // 
-            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(395, 100);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(228, 28);
-            this.comboBox1.TabIndex = 20;
+            this.cmbDirrecion.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cmbDirrecion.FormattingEnabled = true;
+            this.cmbDirrecion.Location = new System.Drawing.Point(382, 100);
+            this.cmbDirrecion.Name = "cmbDirrecion";
+            this.cmbDirrecion.Size = new System.Drawing.Size(254, 28);
+            this.cmbDirrecion.TabIndex = 20;
             // 
             // uscModificarDireccion
             // 
@@ -127,6 +128,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "uscModificarDireccion";
             this.Size = new System.Drawing.Size(679, 536);
+            this.Load += new System.EventHandler(this.uscModificarDireccion_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
@@ -140,6 +142,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.TextBox txbDireccion;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbDirrecion;
     }
 }

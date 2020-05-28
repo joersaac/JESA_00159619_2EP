@@ -36,10 +36,10 @@
             this.tlpDirecciones = new System.Windows.Forms.TableLayoutPanel();
             this.dgvDirecciones = new System.Windows.Forms.DataGridView();
             this.btnAnadir = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.uscAnadirDireccion1 = new Parcial02_001591619_JESA.uscAnadirDireccion();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.btnEliminarD = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.uscAnadirDireccion1 = new Parcial02_001591619_JESA.uscAnadirDireccion();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
@@ -107,8 +107,8 @@
             this.tlpDirecciones.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66833F));
             this.tlpDirecciones.Controls.Add(this.dgvDirecciones, 0, 0);
             this.tlpDirecciones.Controls.Add(this.btnAnadir, 1, 1);
-            this.tlpDirecciones.Controls.Add(this.button1, 2, 1);
-            this.tlpDirecciones.Controls.Add(this.button2, 3, 1);
+            this.tlpDirecciones.Controls.Add(this.btnModificar, 2, 1);
+            this.tlpDirecciones.Controls.Add(this.btnEliminarD, 3, 1);
             this.tlpDirecciones.Controls.Add(this.uscAnadirDireccion1, 1, 0);
             this.tlpDirecciones.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlpDirecciones.Location = new System.Drawing.Point(4, 5);
@@ -145,32 +145,45 @@
             this.btnAnadir.TabIndex = 7;
             this.btnAnadir.Text = "Añadir";
             this.btnAnadir.UseVisualStyleBackColor = false;
+            this.btnAnadir.Click += new System.EventHandler(this.btnAnadir_Click);
             // 
-            // button1
+            // btnModificar
             // 
-            this.button1.BackColor = System.Drawing.Color.SlateBlue;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(791, 587);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(191, 59);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Modificar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnModificar.BackColor = System.Drawing.Color.SlateBlue;
+            this.btnModificar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.ForeColor = System.Drawing.Color.White;
+            this.btnModificar.Location = new System.Drawing.Point(791, 587);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(191, 59);
+            this.btnModificar.TabIndex = 8;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btnEliminarD
             // 
-            this.button2.BackColor = System.Drawing.Color.SlateBlue;
-            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(988, 587);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(193, 59);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Crear";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnEliminarD.BackColor = System.Drawing.Color.SlateBlue;
+            this.btnEliminarD.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnEliminarD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarD.ForeColor = System.Drawing.Color.White;
+            this.btnEliminarD.Location = new System.Drawing.Point(988, 587);
+            this.btnEliminarD.Name = "btnEliminarD";
+            this.btnEliminarD.Size = new System.Drawing.Size(193, 59);
+            this.btnEliminarD.TabIndex = 9;
+            this.btnEliminarD.Text = "Eliminar";
+            this.btnEliminarD.UseVisualStyleBackColor = false;
+            this.btnEliminarD.Click += new System.EventHandler(this.btnEliminarD_Click);
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.tabPage3.Location = new System.Drawing.Point(4, 29);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(1192, 659);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Ordenes";
             // 
             // uscAnadirDireccion1
             // 
@@ -182,16 +195,6 @@
             this.uscAnadirDireccion1.Name = "uscAnadirDireccion1";
             this.uscAnadirDireccion1.Size = new System.Drawing.Size(585, 574);
             this.uscAnadirDireccion1.TabIndex = 10;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.tabPage3.Location = new System.Drawing.Point(4, 29);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1192, 659);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Ordenes";
             // 
             // frmAccesoNormal
             // 
@@ -224,8 +227,8 @@
         private System.Windows.Forms.TableLayoutPanel tlpDirecciones;
         private System.Windows.Forms.DataGridView dgvDirecciones;
         private System.Windows.Forms.Button btnAnadir;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.Button btnEliminarD;
         private uscAnadirDireccion uscAnadirDireccion1;
     }
 }

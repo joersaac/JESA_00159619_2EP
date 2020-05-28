@@ -129,6 +129,12 @@
     <Compile Include="uscCrearUsuario.Designer.cs">
       <DependentUpon>uscCrearUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="uscEliminarDireccion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uscEliminarDireccion.Designer.cs">
+      <DependentUpon>uscEliminarDireccion.cs</DependentUpon>
+    </Compile>
     <Compile Include="uscEliminarNegocio.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -185,6 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="uscCrearUsuario.resx">
       <DependentUpon>uscCrearUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uscEliminarDireccion.resx">
+      <DependentUpon>uscEliminarDireccion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="uscEliminarNegocio.resx">
       <DependentUpon>uscEliminarNegocio.cs</DependentUpon>
