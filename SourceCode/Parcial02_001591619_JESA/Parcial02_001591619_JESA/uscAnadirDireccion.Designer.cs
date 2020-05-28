@@ -90,6 +90,7 @@
             this.btnAnadir.TabIndex = 16;
             this.btnAnadir.Text = "Añadir Direccion";
             this.btnAnadir.UseVisualStyleBackColor = false;
+            this.btnAnadir.Click += new System.EventHandler(this.btnAnadir_Click);
             // 
             // uscAnadirDireccion
             // 

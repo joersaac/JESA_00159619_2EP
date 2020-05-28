@@ -73,7 +73,7 @@ namespace Parcial02_001591619_JESA
                         }
                         else
                         {
-                            frmAccesoNormal newWindow = new frmAccesoNormal();
+                            frmAccesoNormal newWindow = new frmAccesoNormal());
                             newWindow.ShowDialog();
                         }
                     }
