@@ -141,6 +141,12 @@
     <Compile Include="uscEliminarNegocio.Designer.cs">
       <DependentUpon>uscEliminarNegocio.cs</DependentUpon>
     </Compile>
+    <Compile Include="uscEliminarPedido.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uscEliminarPedido.Designer.cs">
+      <DependentUpon>uscEliminarPedido.cs</DependentUpon>
+    </Compile>
     <Compile Include="uscEliminarProducto.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -158,6 +164,12 @@
     </Compile>
     <Compile Include="uscModificarDireccion.Designer.cs">
       <DependentUpon>uscModificarDireccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uscRealizarOrden.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uscRealizarOrden.Designer.cs">
+      <DependentUpon>uscRealizarOrden.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="frmAccesoAdmin.resx">
       <DependentUpon>frmAccesoAdmin.cs</DependentUpon>
@@ -198,6 +210,9 @@
     <EmbeddedResource Include="uscEliminarNegocio.resx">
       <DependentUpon>uscEliminarNegocio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="uscEliminarPedido.resx">
+      <DependentUpon>uscEliminarPedido.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="uscEliminarProducto.resx">
       <DependentUpon>uscEliminarProducto.cs</DependentUpon>
     </EmbeddedResource>
@@ -206,6 +221,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="uscModificarDireccion.resx">
       <DependentUpon>uscModificarDireccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uscRealizarOrden.resx">
+      <DependentUpon>uscRealizarOrden.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

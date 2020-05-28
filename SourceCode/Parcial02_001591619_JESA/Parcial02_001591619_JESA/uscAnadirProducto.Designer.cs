@@ -64,6 +64,7 @@
             // 
             // cmbNegocios
             // 
+            this.cmbNegocios.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbNegocios.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cmbNegocios.FormattingEnabled = true;
             this.cmbNegocios.Location = new System.Drawing.Point(182, 58);

@@ -113,6 +113,7 @@
             // 
             // cmbDirrecion
             // 
+            this.cmbDirrecion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDirrecion.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cmbDirrecion.FormattingEnabled = true;
             this.cmbDirrecion.Location = new System.Drawing.Point(382, 100);

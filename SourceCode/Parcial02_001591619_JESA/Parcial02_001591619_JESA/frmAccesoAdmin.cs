@@ -35,6 +35,12 @@ namespace Parcial02_001591619_JESA
             {
                 var dt = ConnectionDB.ExecuteQuery($"SELECT iduser, fullname, username FROM appuser");
                 dgvUsuario.DataSource = dt;
+                var dt2 = ConnectionDB.ExecuteQuery("SELECT app.idorder,apu.fullname,adr.address," +
+                "pro.name,bus.name,app.createdate " +
+                "FROM APPORDER app, PRODUCT pro, APPUSER apu, ADDRESS adr, BUSINESS bus " +
+                "WHERE app.idaddress = adr.idaddress AND adr.iduser = apu.iduser " +
+                $"AND app.idproduct = pro.idproduct AND pro.idbusiness = bus.idbusiness");
+                dgvOrdenes.DataSource = dt2;
             }
             catch (Exception ex)
             {
@@ -106,5 +112,6 @@ namespace Parcial02_001591619_JESA
             tlpMantenimientoP.SetColumnSpan(currentP, 2);
             currentP.Dock = System.Windows.Forms.DockStyle.Fill;
         }
+
     }
 }

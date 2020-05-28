@@ -55,6 +55,7 @@
             // 
             // cmbProductos
             // 
+            this.cmbProductos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbProductos.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cmbProductos.FormattingEnabled = true;
             this.cmbProductos.Location = new System.Drawing.Point(179, 67);
