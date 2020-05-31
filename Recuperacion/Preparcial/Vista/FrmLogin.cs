@@ -29,7 +29,9 @@ namespace Preparcial
         private void PoblarControlers()
         {
             cmbUser.DataSource = null;
-            cmbUser.ValueMember = "Contrasenia";
+            // CORRECION: Se cambio el ValueMember de Contrasenia (el cual era incorrecto)a Contrasena
+            // de esta manera se comprueba de manera correcta la contrasenia.
+            cmbUser.ValueMember = "Contrasena";
             cmbUser.DisplayMember = "NombreUsuario";
             cmbUser.DataSource = ControladorUsuario.GetUsuarios();
         }
@@ -37,7 +39,6 @@ namespace Preparcial
         // EventHandler para detectar el click para inciar sesion
         private void BttnLogin_Click(object sender, EventArgs e)
         {
-            
             // Si la contrasena del textBox es igual al SelectedValue del comboBox, entonces iniciar sesion
             if (textBox1.Text.Equals(cmbUser.SelectedValue.ToString()))
             {

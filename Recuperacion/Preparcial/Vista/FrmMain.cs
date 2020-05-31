@@ -42,17 +42,19 @@ namespace Preparcial.Vista
 
         private void ActualizarOrdenesUsuario()
         {
-            dgvMyOrders.DataSource = ControladorPedido.GetPedidosUsuarioTable(u.IdUsuario);
-            cmbProductMakeOrder.ValueMember = "idarticulo";
+            cmbProductMakeOrder.ValueMember = "idArticulo";
             cmbProductMakeOrder.DisplayMember = "producto";
             cmbProductMakeOrder.DataSource = ControladorInventario.GetProductos();
+
+            dgvMyOrders.DataSource = ControladorPedido.GetPedidosUsuarioTable(u.IdUsuario);
         }
 
         private void bttnAddInventary_Click(object sender, EventArgs e)
         {
-            if (txtProductNameInventary.Text.Equals("") &&
-                txtDescriptionInventary.Text.Equals("") &&
-                txtPriceInventary.Text.Equals("") &&
+            //CORRECION: se cambiaron las && por || en la condicion para evitar que se dejen campos vacios.
+            if (txtProductNameInventary.Text.Equals("") ||
+                txtDescriptionInventary.Text.Equals("") ||
+                txtPriceInventary.Text.Equals("") ||
                 txtStockInventary.Text.Equals(""))
                 MessageBox.Show("No puede dejar campos vacios");
             else
@@ -66,7 +68,7 @@ namespace Preparcial.Vista
 
         private void bttnDeleteInventary_Click(object sender, EventArgs e)
         {
-            if(txtDeleteInventary.Text.Equals(""))
+            if (txtDeleteInventary.Text.Equals(""))
                 MessageBox.Show("No puede dejar campos vacios");
             else
             {
@@ -77,7 +79,8 @@ namespace Preparcial.Vista
 
         private void bttnUpdateStockInventary_Click(object sender, EventArgs e)
         {
-            if (txtUpdateStockIdInventary.Text.Equals("") && txtUpdateStockInventary.Text.Equals(""))
+            //CORRECION: se cambiaron las && por || en la condicion para evitar que se dejen campos vacios.
+            if (txtUpdateStockIdInventary.Text.Equals("") || txtUpdateStockInventary.Text.Equals(""))
                 MessageBox.Show("No puede dejar campos vacios");
             else
             {
@@ -110,8 +113,9 @@ namespace Preparcial.Vista
 
             else if (tabControl1.SelectedTab.Name.Equals("viewOrdersTab") && u.Admin)
                 ActualizarOrdenes();
-            
-            else
+            // CORRECION: se agrego una condicion para que no lanze el mensaje: "No tiene permisos para ver esta pestana"
+            // en la pestania general.
+            else if (!tabControl1.SelectedTab.Name.Equals("generalTab"))
             {
                 MessageBox.Show("No tiene permisos para ver esta pestana");
                 tabControl1.SelectedTab = tabControl1.TabPages[0];
@@ -121,7 +125,7 @@ namespace Preparcial.Vista
 
         private void FrmMain_FormClosing(object sender, FormClosingEventArgs e)
         {
-    Application.Exit();
+            Application.Exit();
         }
     }
 }
