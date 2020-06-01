@@ -57,7 +57,10 @@ namespace Preparcial
         private void BttnUpdatePassword_Click(object sender, EventArgs e)
         {
             FrmPassword frmPassword = new FrmPassword();
-            frmPassword.Show();
+            //CORRECION: se cambio de show a showdialog para que asi la ventana sea capaz de actualizar en la ventana Login
+            // las contrasenias que hayan sido cambiadas y no causen problemas a la hora de registrarse un usuario.
+            frmPassword.ShowDialog();
+            PoblarControlers();
         }
     }
 }
